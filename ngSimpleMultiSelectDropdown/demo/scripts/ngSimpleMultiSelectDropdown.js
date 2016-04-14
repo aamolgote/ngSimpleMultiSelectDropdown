@@ -11,7 +11,8 @@
                 "selectAllDropdownItems": "=",
                 "selectText": "@",
                 "allText": "@",
-                "showAll": "="
+                "showAll": "=",
+                "maxItemsDisplayed": "@"
             },
             templateUrl: 'scripts/templates/multiSelectDropdown.html',
             replace: true,

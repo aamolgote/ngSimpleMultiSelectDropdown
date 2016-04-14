@@ -14,6 +14,26 @@
             {
                 name: "New York",
                 code: "NYC"
+            },
+            {
+                name: "Chicago",
+                code: "CHG"
+            },
+            {
+                name: "Newark",
+                code: "EWR"
+            },
+            {
+                name: "Atlanta",
+                code: "ATL"
+            },
+            {
+                name: "Seattle",
+                code: "SEATAC"
+            },
+            {
+                name: "Brisbane",
+                code: "BRB"
             }
         ]
     }]);

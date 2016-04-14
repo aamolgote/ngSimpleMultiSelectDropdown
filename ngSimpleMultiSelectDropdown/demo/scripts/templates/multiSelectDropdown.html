@@ -1,10 +1,10 @@
 ﻿<div class="multiple-select-wrapper">
     <div class="selected-items-box" tabindex="0">
-        <span ng-show="(dropdownItems | filter: getSelectedItemsOnly).length > 4 && !selectAllDropdownItems" title="See more items..">{{(dropdownItems | filter: getSelectedItemsOnly).length}} selected</span>
+        <span ng-show="(dropdownItems | filter: getSelectedItemsOnly).length > maxItemsDisplayed && !selectAllDropdownItems" title="See more items..">{{(dropdownItems | filter: getSelectedItemsOnly).length}} selected</span>
         <span class="dropdown-icon"></span>
-        <ul class="items-list" ng-show="(dropdownItems | filter: getSelectedItemsOnly).length <= 4 && !selectAllDropdownItems">
-            <li ng-repeat="dropdownItem in dropdownItems | filter: getSelectedItemsOnly| limitTo: 4">
-                {{dropdownItem.Name}}{{$last ? '' : ', '}}
+        <ul class="items-list" ng-show="(dropdownItems | filter: getSelectedItemsOnly).length <= maxItemsDisplayed && !selectAllDropdownItems">
+            <li ng-repeat="dropdownItem in dropdownItems | filter: getSelectedItemsOnly| limitTo: maxItemsDisplayed">
+                {{dropdownItem[displayField]}}{{$last ? '' : ', '}}
             </li>
         </ul>
         <span ng-show="(dropdownItems | filter: getSelectedItemsOnly).length === 0 && dropdownItems.length > 0 && !selectAllDropdownItems" title="{{selectText}}">{{selectText}}</span>

@@ -1,19 +1,27 @@
-﻿.multiple-select-wrapper .selected-items-box {
-    font-size: 1rem !important;
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.multiple-select-wrapper {
+﻿.multiple-select-wrapper {
     position: relative;
-    
-}
+    width: 250px;
+}   
 
 .multiple-select-wrapper .selected-items-box {
     cursor: pointer;
     border: solid 1px #C7C6C7;
     padding: 4px 8px 4px 8px;
-    height: 32px;
     background-color: #fff;
+    font-size: 1rem !important;
+	font-family:inherit;
+
 }
+.multiple-select-wrapper .selected-items-box .items-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.multiple-select-wrapper .selected-items-box .items-list li{
+    display:inline;
+}
+
 .multiple-select-wrapper .list {
     display: none;
     overflow-y: auto;
@@ -23,15 +31,15 @@
     border-bottom: solid 1px #C7C6C7;
     z-index: 9999;
     position: absolute;
-    
+    width:100%;
 }
-.list .items-list {
+.multiple-select-wrapper .list .items-list {
     list-style-type: none;
-    width: 100%;
     padding: 0;
     margin: 0;
 }
-.list .items-list li {
+
+.multiple-select-wrapper .list .items-list li {
     margin: 0;
     width: 100%;
     padding: 0;
