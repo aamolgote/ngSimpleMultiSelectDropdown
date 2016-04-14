@@ -2,9 +2,17 @@
 <html>
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <link href="styles/ngsimpledropdown.css" rel="stylesheet" />
+    <script src="scripts/jquery-2.2.3.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/ngSimpleMultiSelectDropdown.js"></script>
+    <script src="app.js"></script>
 </head>
-<body>
-
+<body ng-app="ngMultiSelectDropdownDemoApp">
+    <div ng-controller="ngMultiSelectDropdownCtrl">
+        <multi-select-dropdown dropdown-items="cities" select-all-dropdown-items="selectAllCities" tabindex="-1" display-field="name"
+                               show-all="true" no-items-text="No Desks to select.." select-text="Select Cities" all-text="All" showall="true"></multi-select-dropdown>
+    </div>
 </body>
 </html>

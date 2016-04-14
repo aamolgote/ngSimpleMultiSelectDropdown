@@ -1,0 +1,41 @@
+﻿.multiple-select-wrapper .selected-items-box {
+    font-size: 1rem !important;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.multiple-select-wrapper {
+    position: relative;
+    
+}
+
+.multiple-select-wrapper .selected-items-box {
+    cursor: pointer;
+    border: solid 1px #C7C6C7;
+    padding: 4px 8px 4px 8px;
+    height: 32px;
+    background-color: #fff;
+}
+.multiple-select-wrapper .list {
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-left: solid 1px #C7C6C7;
+    border-right: solid 1px #C7C6C7;
+    border-bottom: solid 1px #C7C6C7;
+    z-index: 9999;
+    position: absolute;
+    
+}
+.list .items-list {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.list .items-list li {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    border-bottom: solid 1px #C7C6C7;
+    padding: 5px 5px 5px 5px;
+    background-color: #fff;
+}
