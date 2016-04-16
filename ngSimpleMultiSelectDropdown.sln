@@ -3,24 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ngSimpleMultiSelectDropdown(2)", "ngSimpleMultiSelectDropdown\", "{09704B46-F3F0-421B-A5ED-0E7E8ECBCBE2}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ngSimpleMultiSelectDropdown", ".", "{4B0509EA-F77F-4FFB-BC39-90FA41B6C16B}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_11720"
-		Debug.AspNetCompiler.PhysicalPath = "ngSimpleMultiSelectDropdown\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_11720\"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_2218"
+		Debug.AspNetCompiler.PhysicalPath = "..\ngSimpleMultiSelectDropdown\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2218\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_11720"
-		Release.AspNetCompiler.PhysicalPath = "ngSimpleMultiSelectDropdown\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_11720\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_2218"
+		Release.AspNetCompiler.PhysicalPath = "..\ngSimpleMultiSelectDropdown\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2218\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "11720"
+		VWDPort = "2218"
+		SlnRelativePath = "..\ngSimpleMultiSelectDropdown\"
 	EndProjectSection
 EndProject
 Global
@@ -28,8 +29,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{09704B46-F3F0-421B-A5ED-0E7E8ECBCBE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{09704B46-F3F0-421B-A5ED-0E7E8ECBCBE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B0509EA-F77F-4FFB-BC39-90FA41B6C16B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B0509EA-F77F-4FFB-BC39-90FA41B6C16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
