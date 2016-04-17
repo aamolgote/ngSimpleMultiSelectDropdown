@@ -1,4 +1,4 @@
-/*! ng Simple Multi Select Dropdown - v1.0.0 - 2016-04-16
+/*! ng Simple Multi Select Dropdown - v1.0.0 - 2016-04-17
 * Copyright (c) 2016 ; Licensed  */
 (function () {
     'use strict'
@@ -16,7 +16,7 @@ angular.module('simpleMultiSelectDropdown').run(['$templateCache', function($tem
 (function () {
     'use strict'
     var simpleMultiSelectDropdown = angular.module('simpleMultiSelectDropdown');
-    simpleMultiSelectDropdown.directive('multiSelectDropdown', ['$document', function ($document) {
+    simpleMultiSelectDropdown.directive('ngSimpleMultiSelectDropdown', ['$document', function ($document) {
         return {
             restrict: 'EA',
             scope: {

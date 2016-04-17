@@ -36,5 +36,11 @@
                 code: "BRB"
             }
         ]
+
+        $scope.submitSelectedCities = function () {
+            angular.forEach($scope.cities, function (city, key) {
+                console.log(city.selected);
+            })
+        }
     }]);
 })();

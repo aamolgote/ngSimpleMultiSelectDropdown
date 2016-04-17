@@ -11,9 +11,11 @@
 </head>
 <body ng-app="ngMultiSelectDropdownDemoApp">
     <div ng-controller="ngMultiSelectDropdownCtrl">
-        <multi-select-dropdown dropdown-items="cities" select-all-dropdown-items="selectAllCities" tabindex="-1" display-field="name"
+        <ng-simple-multi-select-dropdown dropdown-items="cities" select-all-dropdown-items="selectAllCities" tabindex="-1" display-field="name"
                                show-all="true" no-items-text="No Cities to select.." select-text="Select Cities" all-text="All"
-                               max-items-displayed="6"></multi-select-dropdown>
+                               max-items-displayed="6"></ng-simple-multi-select-dropdown>
+        <br/>
+        <a href="#" ng-click="submitSelectedCities()">Submit cities</a>
     </div>
 </body>
 </html>

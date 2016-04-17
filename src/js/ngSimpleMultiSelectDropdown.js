@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict'
     var simpleMultiSelectDropdown = angular.module('simpleMultiSelectDropdown');
-    simpleMultiSelectDropdown.directive('multiSelectDropdown', ['$document', function ($document) {
+    simpleMultiSelectDropdown.directive('ngSimpleMultiSelectDropdown', ['$document', function ($document) {
         return {
             restrict: 'EA',
             scope: {
