@@ -1,6 +1,6 @@
 ﻿(function () {
     'use strict'
-    var simpleMultiSelectDropdown = angular.module('simpleMultiSelectDropdown', []);
+    var simpleMultiSelectDropdown = angular.module('simpleMultiSelectDropdown');
     simpleMultiSelectDropdown.directive('multiSelectDropdown', ['$document', function ($document) {
         return {
             restrict: 'EA',
@@ -11,9 +11,10 @@
                 "selectAllDropdownItems": "=",
                 "selectText": "@",
                 "allText": "@",
-                "showAll": "="
+                "showAll": "=",
+                "maxItemsDisplayed": "@"
             },
-            templateUrl: '/templates/multiSelectDropdown.html',
+            templateUrl: 'src/templates/multiSelectDropdown.html',
             replace: true,
             link: function ($scope, elem, attrs, ngModelCtrl) {
                 $scope.currentIndex = -1;

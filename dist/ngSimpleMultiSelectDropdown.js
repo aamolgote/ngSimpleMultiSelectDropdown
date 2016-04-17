@@ -1,6 +1,21 @@
-﻿(function () {
+/*! ng Simple Multi Select Dropdown - v1.0.0 - 2016-04-16
+* Copyright (c) 2016 ; Licensed  */
+(function () {
     'use strict'
-    var simpleMultiSelectDropdown = angular.module('simpleMultiSelectDropdown', []);
+    angular.module('simpleMultiSelectDropdown', []);
+})();
+angular.module('simpleMultiSelectDropdown').run(['$templateCache', function($templateCache) {
+  'use strict';
+
+  $templateCache.put('src/templates/multiSelectDropdown.html',
+    "<div class=\"multiple-select-wrapper\"><div class=\"selected-items-box\" tabindex=\"0\"><span ng-show=\"(dropdownItems | filter: getSelectedItemsOnly).length > maxItemsDisplayed && !selectAllDropdownItems\" title=\"See more items..\">{{(dropdownItems | filter: getSelectedItemsOnly).length}} selected</span> <span class=\"dropdown-icon\"></span><ul class=\"items-list\" ng-show=\"(dropdownItems | filter: getSelectedItemsOnly).length <= maxItemsDisplayed && !selectAllDropdownItems\"><li ng-repeat=\"dropdownItem in dropdownItems | filter: getSelectedItemsOnly| limitTo: maxItemsDisplayed\">{{dropdownItem[displayField]}}{{$last ? '' : ', '}}</li></ul><span ng-show=\"(dropdownItems | filter: getSelectedItemsOnly).length === 0 && dropdownItems.length > 0 && !selectAllDropdownItems\" title=\"{{selectText}}\">{{selectText}}</span> <span ng-show=\"dropdownItems.length === 0\" title=\"{{noItemsText}}\">{{noItemsText}}</span> <span ng-show=\"dropdownItems.length > 0 && selectAllDropdownItems\" title=\"{{allText}}\">{{allText}}</span></div><div class=\"list\"><ul class=\"items-list\"><li ng-show=\"dropdownItems.length > 0 && showAll\" ng-class=\"{'items-list-selected' : currentIndex === 0}\"><input id=\"filterDiv\" type=\"checkbox\" ng-model=\"selectAllDropdownItems\" ng-click=\"selectAll()\"><span style=\"padding:0px 0px 0px 5px\">All</span></li><li ng-repeat=\"dropdownItem in dropdownItems\" ng-class=\"{'items-list-selected' : $index == currentIndex - 1 }\"><input type=\"checkbox\" ng-model=\"dropdownItem.selected\" ng-click=\"checkBoxChecked(dropdownItem.selected)\"> <span>{{dropdownItem[displayField]}}</span></li></ul></div></div>"
+  );
+
+}]);
+
+(function () {
+    'use strict'
+    var simpleMultiSelectDropdown = angular.module('simpleMultiSelectDropdown');
     simpleMultiSelectDropdown.directive('multiSelectDropdown', ['$document', function ($document) {
         return {
             restrict: 'EA',
@@ -11,9 +26,10 @@
                 "selectAllDropdownItems": "=",
                 "selectText": "@",
                 "allText": "@",
-                "showAll": "="
+                "showAll": "=",
+                "maxItemsDisplayed": "@"
             },
-            templateUrl: '/templates/multiSelectDropdown.html',
+            templateUrl: 'src/templates/multiSelectDropdown.html',
             replace: true,
             link: function ($scope, elem, attrs, ngModelCtrl) {
                 $scope.currentIndex = -1;
@@ -152,3 +168,11 @@
         };
     }]);
 })();
+angular.module('simpleMultiSelectDropdown').run(['$templateCache', function($templateCache) {
+  'use strict';
+
+  $templateCache.put('src/templates/multiSelectDropdown.html',
+    "<div class=\"multiple-select-wrapper\"><div class=\"selected-items-box\" tabindex=\"0\"><span ng-show=\"(dropdownItems | filter: getSelectedItemsOnly).length > maxItemsDisplayed && !selectAllDropdownItems\" title=\"See more items..\">{{(dropdownItems | filter: getSelectedItemsOnly).length}} selected</span> <span class=\"dropdown-icon\"></span><ul class=\"items-list\" ng-show=\"(dropdownItems | filter: getSelectedItemsOnly).length <= maxItemsDisplayed && !selectAllDropdownItems\"><li ng-repeat=\"dropdownItem in dropdownItems | filter: getSelectedItemsOnly| limitTo: maxItemsDisplayed\">{{dropdownItem[displayField]}}{{$last ? '' : ', '}}</li></ul><span ng-show=\"(dropdownItems | filter: getSelectedItemsOnly).length === 0 && dropdownItems.length > 0 && !selectAllDropdownItems\" title=\"{{selectText}}\">{{selectText}}</span> <span ng-show=\"dropdownItems.length === 0\" title=\"{{noItemsText}}\">{{noItemsText}}</span> <span ng-show=\"dropdownItems.length > 0 && selectAllDropdownItems\" title=\"{{allText}}\">{{allText}}</span></div><div class=\"list\"><ul class=\"items-list\"><li ng-show=\"dropdownItems.length > 0 && showAll\" ng-class=\"{'items-list-selected' : currentIndex === 0}\"><input id=\"filterDiv\" type=\"checkbox\" ng-model=\"selectAllDropdownItems\" ng-click=\"selectAll()\"><span style=\"padding:0px 0px 0px 5px\">All</span></li><li ng-repeat=\"dropdownItem in dropdownItems\" ng-class=\"{'items-list-selected' : $index == currentIndex - 1 }\"><input type=\"checkbox\" ng-model=\"dropdownItem.selected\" ng-click=\"checkBoxChecked(dropdownItem.selected)\"> <span>{{dropdownItem[displayField]}}</span></li></ul></div></div>"
+  );
+
+}]);
