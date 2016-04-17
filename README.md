@@ -1,12 +1,12 @@
 # ngSimpleMultiSelectDropdown
-ngSimpleMultiSelectDropdown is a light weight angular directive for simple multi select down 
+ngSimpleMultiSelectDropdown is a Light weight angular directive for simple multi select drop down 
 
 See demo page over [here](http://ngsimplemultiselectdropdown.azurewebsites.net/demo/index.html)
 
 Features
 * Simple built using jQuery abstracted with angular directive
-* Select all, deselect all items feature, down arrow key expands, esc collapses. 
-* Light weight compared to what is available
+* Select all, deselect all items, down arrow key expands, esc collapses. 
+* Light weight compared to what is available over web.
 * Customizable
 * .....
 
@@ -28,6 +28,12 @@ Include ngSimpleMultiSelectDropdown js file and CSS
 <link href="styles/ngSimpleMultiSelectDropdown.css" rel="stylesheet" />
 <script src="scripts/ngSimpleMultiSelectDropdown.min.js"></script>
 ```
+
+Register the 'simpleMultiSelectDropdown' module with main app module.
+```javascript
+var app = angular.module('ngMultiSelectDropdownDemoApp', ['simpleMultiSelectDropdown']);
+```
+
 You can use the directive like shown below, 
 ```html
  <ng-simple-multi-select-dropdown 
