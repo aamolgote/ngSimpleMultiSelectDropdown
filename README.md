@@ -48,19 +48,19 @@ You can use the directive like shown below,
        select-all-dropdown-items="selectAllCities" >
 </ng-simple-multi-select-dropdown>
 ```
-* dropdown-items - this is scope item which will array of objects, in the sample it is cities
-  ```javascript
-  $scope.cities = [
-              {
-                  name: "Los Angeles",
-                  code: "LA"
-              },
-              {
-                  name: "San Francisco",
-                  code: "SFO"
-              }
-          ]
-	```
+ * dropdown-items - this is scope item which will array of objects, in the sample it is cities
+	  ```javascript
+	  $scope.cities = [
+				  {
+					  name: "Los Angeles",
+					  code: "LA"
+				  },
+				  {
+					  name: "San Francisco",
+					  code: "SFO"
+				  }
+			  ]
+		```
  * **display-field** - This is property within object that needs to be used for displaying text in the drop down.
  * **show-all** - This add All checkbox which will select all items.
  * **no-tems-text** - If the array bound to the drop is empty then this is message which will show in the dropdown text and drop down will not expand.
