@@ -48,7 +48,7 @@ You can use the directive like shown below,
        select-all-dropdown-items="selectAllCities" >
 </ng-simple-multi-select-dropdown>
 ```
- * dropdown-items - this is scope item which will array of objects, in the sample it is cities
+ * **dropdown-items** - this is scope item which will array of objects, in the sample it is cities
 	```javascript
 	$scope.cities = [
 				{
