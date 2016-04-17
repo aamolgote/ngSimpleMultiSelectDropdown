@@ -9,11 +9,15 @@ Features
 * Light weight compared to what is available
 * Customizable
 * .....
+
 ### Version
 1.0.0
+
 ### Installation
 Manual: download latest from [here](https://github.com/aamolgote/ngSimpleMultiSelectDropdown)
+
 ### Using ngSimpleMultiSelectDropdown
+
 Include jQuery and angular
 ```html
  <script src="scripts/jquery-2.2.3.js"></script>
